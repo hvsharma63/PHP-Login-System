@@ -1,3 +1,10 @@
+<?php
+    // Allow the config
+    define('__CONFIG__',true);
+    // require the config
+    require 'include/config.php' 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,32 +17,14 @@
 </head>
 <body>
     <div class="uk-section uk-container">
-        <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid="">
-            <form class="uk-form-stacked js-login">
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-email">Email</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-email" type="email" placeholder="black@blank.blank" requird="required">
-                    </div>
-                </div>
-                
-                <div class="uk-margin">
-                    <label class="uk-form-label" for="form-stacked-password">Password</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="form-stacked-password" type="password" placeholder="Hush Hush!" requird="required">
-                    </div>
-                </div>
-
-                <div class="uk-margin">
-                    <button class="uk-button uk-button-primary" input="submit">Login</button>
-                </div>
-            </form>
-        </div>
+        <?php
+            echo "Nothing in here, Dude!";
+        ?> <br>
+        <p class="uk-text-primary"> Well! Here is what you can do!</p>
+        <a class="uk-link-muted" href="login.php">Login!</a> <br>
+        <a class="uk-link-muted" href="register.php">Register!</a>
     </div>
-    <!--JQUery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- UIkit JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit-icons.min.js"></script>
+    
+    <?php require_once "include/footer.php"; ?>
 </body>
 </html>
